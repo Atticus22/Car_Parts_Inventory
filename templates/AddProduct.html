@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/style.css') }}">
+    
+</head>
+<body>
+
+<div class="container">
+
+
+  <!-- Edit Modal HTML -->
+  <div class="container">
+    <div>
+      <div>
+        <form method="POST" action='/addProduct'>
+          <div class="modal-header">						
+            <h4 class="modal-title">Add Inventory</h4>
+            
+          </div>
+          <div class="modal-body">	
+            
+            <div  class="form-group w-50 " >
+              <label for="make">Make</label>
+              <input type="text"  class="form-control input-sm" id="make" name="make" required>
+            </div>				
+            <div class="form-group w-50">
+              <label for="year">Year</label><br>
+              <input type="number" class="form-control input-sm" id="year" name="year" required>
+            </div>
+            <div class="form-group w-50">
+                <label for="model">Model</label><br>
+                <input type="text" class="form-control input-sm" id="model" name="model" required>
+              </div>
+              <div class="form-group w-50">
+                <label for="engine">Engine</label><br>
+                <input type="text" id="engine" class="form-control input-sm" name="engine" required>
+              </div>
+              <div class="form-group w-50">
+                <label for="part">Part</label><br>
+                <input type="text" id="part"   class="form-control input-sm" name="part" required>
+              </div>
+              <div class="form-group w-50">
+                <label for="partno">Part Number:</label><br>
+                <input type="number" class="form-control input-sm" id="partno" name="partno" required>
+              </div>
+              <div class="form-group w-50 w-50">
+                <label for="quantity">Quantity</label><br>
+                <input type="number"  class="form-control input-sm" id="quantity" name="quantity" required>
+              </div>		
+              <div class="form-group w-50">
+                <label for="price">Price</label><br>
+                <!-- step="any" allows decimal values-->
+                <input type="number" step=".01" class="form-control input-sm" id="price" name="price" required>
+              </div>	
+              	
+              				
+          </div>
+          <div class="modal-footer w-50">
+            <a  class="btn btn-default" href="/" value="Cancel">Cancel </a>
+            <input type="submit" class="btn btn-success" value="Add">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</html>
