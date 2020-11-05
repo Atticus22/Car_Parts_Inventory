@@ -2,6 +2,10 @@
 
 This is a car parts inventory management system. User can add details of car parts and perform actions like updating/deleting parts from the database table.
 
+# live demo
+
+http://198.58.115.164/
+
 ## Requirements
 1. Python 3
 2. Sqlite Python 
