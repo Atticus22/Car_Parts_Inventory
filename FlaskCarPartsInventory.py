@@ -1,9 +1,17 @@
-"""
-******************************************************************************
-*    CAR PARTS INVENTORY MANAGEMENT SYSTEM                                   *
-*    Python Flask Implementation                                                                         *
-******************************************************************************
-"""
+''' 
+**********************************************************************;
+* Project           : Car Parts Inventory System
+*
+* Program name      : FlaskCarPartsInventory.py
+*
+* Author            : Jhostin Nunez
+*
+* Date created      : 11/05/2020
+*
+* Purpose           : Simulates an inventory system for a car parts store.
+*
+|**********************************************************************;
+'''
 
 
 
